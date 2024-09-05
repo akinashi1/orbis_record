@@ -10,7 +10,7 @@ export default function Home() {
 		<main className="flex min-h-screen flex-col items-center justify-center p-24">
 
 			<div>
-				<img className="w-96 h-96 object-contain" src="/orbis_icon.png" alt="orbis_icon"></img>
+				<img className="w-96 h-96 object-contain"  src={`${BASE_PATH}/orbis_icon.png`} alt="orbis_icon"></img>
 			</div>
 
 			<div className="text-7xl ubuntu-mono-regular">
