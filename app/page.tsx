@@ -13,7 +13,8 @@ export default function Home() {
 
 
 		<Image   src={`${BASE_PATH}/orbis_icon.png`} alt="orbis_icon"          width={100}
-          height={100}></Image>
+          height={100}>
+		  </Image>
 	
         <Image
           className={styles.logo}
