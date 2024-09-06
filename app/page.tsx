@@ -9,14 +9,12 @@ const BASE_PATH = nextConfig.basePath || "";
 export default function Home() {
   return (
     <div className={styles.page}>
-
-
-
       <main className={styles.main}>
 
-		<div>
-			<img className={styles.icon}  src={`${BASE_PATH}/orbis_icon.png`} alt="orbis_icon"></img>
-		</div> 
+
+		<Image   src={`${BASE_PATH}/orbis_icon.png`} alt="orbis_icon"          width={100}
+          height={100}></Image>
+	
         <Image
           className={styles.logo}
           src="https://nextjs.org/icons/next.svg"

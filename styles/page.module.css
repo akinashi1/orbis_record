@@ -123,10 +123,6 @@ a.secondary {
   }
 }
 
-  .icon {
-    height: 500px;
-	width: 500px;
-  }
 
 @media (max-width: 600px) {
   .page {
