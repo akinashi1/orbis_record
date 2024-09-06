@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "../styles/page.module.css";
 import nextConfig from "../next.config.mjs";
-import {Footer} from "../components/Footer";
+import {Footer} from "../components/footer";
 
 
 const BASE_PATH = nextConfig.basePath || "";

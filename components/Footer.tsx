@@ -2,7 +2,7 @@ import Image from "next/image";
 import classes from "../styles/footer.module.css";
 import nextConfig from "../next.config.mjs";
 
-
+ 
 
 const BASE_PATH = nextConfig.basePath || "";
 
