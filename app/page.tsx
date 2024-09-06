@@ -3,7 +3,6 @@ import styles from "../styles/page.module.css";
 import nextConfig from "../next.config.mjs";
 import {Footer} from "../components/footer";
 
-
 const BASE_PATH = nextConfig.basePath || "";
 
 export default function Home() {
@@ -11,19 +10,16 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
 
+		<Image
+		    src={`${BASE_PATH}/orbis_icon.png`} alt="orbis_icon"
+			width={400}
+            height={400}
+		/>
 
-		<Image   src={`${BASE_PATH}/orbis_icon.png`} alt="orbis_icon"          width={100}
-          height={100}>
-		  </Image>
-	
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
+		<div>
+			<strong className={styles.title}>ORBIS RECORD</strong>
+		</div>
+
         <ol>
           <li>
             Get started by editing <code>app/page.tsx</code>.
