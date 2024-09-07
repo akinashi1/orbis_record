@@ -1,4 +1,52 @@
-.main{
-  background-color: rgb(66, 166, 243);
-  margin-top: 50px;
+.header{
+  height: 100px;
+
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.33);
+
+}
+.headLeft{
+  margin-left: 10px;
+}
+
+.logo{
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+
+.logo strong{
+  margin-left: 10px;
+  font-size: 30px;
+  display: block;
+
+  vertical-align: text-bottom;
+
+}
+
+
+.head_center{
+  vertical-align: middle;
+
+  max-width: 820px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+
+.head_center p{
+  font-size: 20px;
+  padding: 0 40px;
+}
+
+.head_right{
+  display: block;
+  width:236px;
 }
