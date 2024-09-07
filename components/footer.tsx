@@ -3,6 +3,7 @@ import classes from "../styles/footer.module.css";
 import nextConfig from "../next.config.mjs";
 
 
+
 export function Footer() {
   return (
       <footer className={classes.footer}>

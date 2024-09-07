@@ -1,24 +1,27 @@
 import Image from "next/image";
-import styles from "../styles/page.module.css";
-import nextConfig from "../next.config.mjs";
-import {Footer} from "../components/footer";
+import styles from "@/styles/page.module.css";
+import nextConfig from "@/next.config.mjs";
+import {Header} from "@/components/Header";
+import {Footer} from "@/components/Footer";
+
 
 const BASE_PATH = nextConfig.basePath || "";
 
 export default function Home() {
   return (
     <div className={styles.page}>
+
+    <Header />
       <main className={styles.main}>
+      <Image
+          src={`${BASE_PATH}/orbis_icon.png`} alt="orbis_icon"
+        width={400}
+              height={400}
+      />
 
-		<Image
-		    src={`${BASE_PATH}/orbis_icon.png`} alt="orbis_icon"
-			width={400}
-            height={400}
-		/>
-
-		<div>
-			<strong className={styles.title}>ORBIS RECORD</strong>
-		</div>
+      <div>
+        <strong className={styles.title}>ORBIS RECORD</strong>
+      </div>
 
         <ol>
           <li>
