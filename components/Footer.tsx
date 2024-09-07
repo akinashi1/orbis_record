@@ -1,5 +1,5 @@
 import Image from "next/image";
-import classes from "../styles/FFooter.module.css";
+import classes from "../styles/Footer.module.css";
 import nextConfig from "../next.config.mjs";
 
 
