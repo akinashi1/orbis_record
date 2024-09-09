@@ -15,9 +15,10 @@
   gap: 64px;
   font-family: var(--font-geist-sans);
 } */
-
-.main{
-  
+.box{
+  height: 50px;
+  width: 50px;
+  background-color: red;
 }
 
 .page {

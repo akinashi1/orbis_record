@@ -4,18 +4,18 @@ import classes from "@/styles/Header.module.css";
 import nextConfig from "@/next.config.mjs";
 import styles from "@/styles/Main.module.css";
 
+import { StrictMode } from "react";
+import { motion } from "framer-motion"
+import App from "@/components/motion/LogoMotion";
+import {OrbisLogo} from "@/components/OrbisLogo";
 
 const BASE_PATH = nextConfig.basePath || "";
 
 export function Main() {
   return (
     <main className={styles.main}>
-    <Image
-        src={`${BASE_PATH}/orbis_icon.png`} alt="orbis_icon"
-      width={400}
-            height={400}
-    />
 
+    <OrbisLogo />
     <div>
       <strong className={styles.title}>ORBIS RECORD</strong>
     </div>
@@ -55,5 +55,8 @@ export function Main() {
         </a>
       </div> */}
     </main>
-  );
+
+
+);
+
 }
