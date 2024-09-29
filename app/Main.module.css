@@ -15,6 +15,16 @@
   gap: 64px;
   font-family: var(--font-geist-sans);
 } */
+
+.title{
+	font-size: 60px;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+}
+
 .box{
   height: 50px;
   width: 50px;
@@ -43,9 +53,7 @@
   background-color: red;
 }
 
-.title{
-	font-size: 60px;
-}
+
 
 @media (prefers-color-scheme: dark) {
   .page {

@@ -21,11 +21,11 @@ export function Header() {
         </div>
 
         <div className={classes.head_center}>
-          {/* <Link  href={"/character"}><p className={classes.menu_text}>Character</p></Link>
-          <Link  href={"/species"}><p className={classes.menu_text}>Species</p></Link>
+          <Link  href={"/character"}><p className={classes.menu_text}>Character</p></Link>
+          {/* <Link  href={"/species"}><p className={classes.menu_text}>Species</p></Link>
           <Link  href={"/world"}><p className={classes.menu_text}>World</p></Link>
           <Link  href={"/items"}><p className={classes.menu_text}>Item</p></Link>
-          <Link  href={"/term"}><p className={classes.menu_text}>Term</p></Link> */}
+          <Link  href={"/term"}><p className={classes.menu_text}>Term</p></Link>  */}
         </div>
 
         <div className={classes.head_right}>
