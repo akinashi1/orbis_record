@@ -1,9 +1,9 @@
 import Image from "next/image";
 import styles from "@/styles/Main.module.css";
 import nextConfig from "@/next.config.mjs";
-import {Header} from "@/components/Header";
+import {Header} from "@/components/layouts/header/Header";
 import {Footer} from "@/components/Footer";
-import {Main} from "@/components/Main";
+import {Main} from "@/components/elements/main/Main";
 import {OrbisLogo} from "@/components/OrbisLogo";
 import { motion } from "framer-motion"
 import App from "@/components/motion/LogoMotion";
