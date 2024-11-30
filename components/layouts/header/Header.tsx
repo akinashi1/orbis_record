@@ -1,37 +1,53 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import classes from "./Header.module.css";
 import nextConfig from "@/next.config.mjs";
+import React, { useState } from "react";
 
 const BASE_PATH = nextConfig.basePath || "";
 
 export function Header() {
+
+  const [isActive, setIsActive] = useState(false);
+
+  function click_burger(){
+    setIsActive((prev) => !prev);
+  }
+
   return (
       <header className={classes.header}>
+        <div className={classes.main}>
 
-        <div  className={classes.headLeft}>
           <Link href="/" className={classes.logo}>
             <Image
-            src={`${BASE_PATH}/orbis_icon.png`} alt="orbis_icon"
-            width={90}
-            height={90}
+              src={`${BASE_PATH}/orbis_icon.png`} alt="orbis_icon"
+              width={90}
+              height={90}
             />
-            <strong className={classes.logo_text}>ORBIS <br/>RECORD</strong>
+            <strong>ORBIS <br/>RECORD</strong>
           </Link>
-        </div>
 
-        <div className={classes.head_center}>
-          <Link  href={"/character"}><p className={classes.menu_text}>Character</p></Link>
-          {/* <Link  href={"/species"}><p className={classes.menu_text}>Species</p></Link>
-          <Link  href={"/world"}><p className={classes.menu_text}>World</p></Link>
-          <Link  href={"/items"}><p className={classes.menu_text}>Item</p></Link>
-          <Link  href={"/term"}><p className={classes.menu_text}>Term</p></Link>  */}
+          <section>
+            <nav className={`${classes.right_nav} ${isActive ? classes.active : ""}`}>
+              <p className={classes.menu}><Link href={"/character"}>Character</Link></p>
+              <p className={classes.menu}><Link href={"/species"}>species</Link></p>
+              <p className={classes.menu}><Link href={"/world"}>world</Link></p>
+              <p className={classes.menu}><Link href={"/items"}>items</Link></p>
+              <p className={classes.menu}><Link href={"/term"}>term</Link></p>
+            </nav>
+            
+            <section onClick={ () => click_burger() }>
+              <div className={`${classes.btn_trigger} ${isActive ? classes.active : ""}`}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </section>
+            
+          </section>
         </div>
-
-        <div className={classes.head_right}>
-          絶賛工事中
-        </div>
-
       </header>
   );
 }

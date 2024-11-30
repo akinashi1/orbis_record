@@ -6,7 +6,8 @@ const BASE_PATH = nextConfig.basePath || "";
 
 export default function Home() {
   return (
-    <main>
+    <main  className={styles.main}>
+      <div className={styles.contain}>
         <div className={styles.flex}>
           <OrbisLogo />
         </div>
@@ -15,6 +16,7 @@ export default function Home() {
           <div>
             <strong className={styles.title}>ORBIS RECORD</strong>
           </div>
+        </div>
         </div>
     </main>
   );
