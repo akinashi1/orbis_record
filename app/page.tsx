@@ -2,7 +2,8 @@ import Image from "next/image";
 import nextConfig from "@/next.config.mjs";
 import styles from "./Main.module.css";
 import {OrbisLogo} from "@/components/OrbisLogo";
-import * as species from "@/feautres/top/components/index.tsx"
+import {SpeciesList} from "@/feautres/top/components/species/SpeciesList"
+
 
 const BASE_PATH = nextConfig.basePath || "";
 
@@ -36,7 +37,7 @@ export default function Home() {
         <div className={styles.world_contents}>世界一覧</div>
       </section>
 
-      <species.species_list />
+      <SpeciesList />
     </section>
   </main>
   );

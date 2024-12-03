@@ -5,7 +5,7 @@ const BASE_PATH = nextConfig.basePath || "";
 import styles from "./species_list.module.css";
 import {OrbisLogo} from "@/components/OrbisLogo";
 
-export default function species_list() {
+export function SpeciesList() {
   return (
     <main  className={styles.main}>
 
