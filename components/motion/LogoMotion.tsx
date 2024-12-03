@@ -25,7 +25,6 @@ export default function App() {
             src={`${BASE_PATH}/orbis_icon.png`} alt="orbis_icon"
             width={400}
             height={400}
-
           />
         </motion.div>
       </div>

@@ -32,12 +32,12 @@ export function Header() {
           <section>
             <nav className={`${classes.right_nav} ${isActive ? classes.active : ""}`}>
               <p className={classes.menu}><Link href={"/character"}>Character</Link></p>
-              <p className={classes.menu}><Link href={"/species"}>species</Link></p>
-              <p className={classes.menu}><Link href={"/world"}>world</Link></p>
-              <p className={classes.menu}><Link href={"/items"}>items</Link></p>
-              <p className={classes.menu}><Link href={"/term"}>term</Link></p>
+              <p className={classes.menu}><Link href={"/species"}>Species</Link></p>
+              <p className={classes.menu}><Link href={"/world"}>World</Link></p>
+              <p className={classes.menu}><Link href={"/items"}>Items</Link></p>
+              <p className={classes.menu}><Link href={"/term"}>Term</Link></p>
             </nav>
-            
+
             <section onClick={ () => click_burger() }>
               <div className={`${classes.btn_trigger} ${isActive ? classes.active : ""}`}>
                 <span></span>
@@ -45,7 +45,7 @@ export function Header() {
                 <span></span>
               </div>
             </section>
-            
+
           </section>
         </div>
       </header>
