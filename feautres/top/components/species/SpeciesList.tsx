@@ -12,7 +12,9 @@ export function SpeciesList() {
         <h1 className={styles.species_title}>種族一覧</h1>
 
         <h2 className={styles.mini_title}>
-          <span className={styles.mini_title_text}>亜人</span>
+          <div>
+            <span className={styles.mini_title_text}>亜人</span>
+          </div>
         </h2>
 
         <div className={styles.species_grid}>
@@ -24,8 +26,7 @@ export function SpeciesList() {
             style={{ width: '100%', height: 'auto' }} 
             />
             <h2>種族名</h2>
-            <p>説明テキスト</p>
-
+            <p>英語名</p>
           </div>
 
           <div className={styles.grid_item}>
