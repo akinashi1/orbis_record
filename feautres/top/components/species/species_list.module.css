@@ -8,17 +8,10 @@
   text-align: center;
 }
 
-.species_grid{
-/* background-color: yellow; */
-}
-
-.grid1 {
-  grid-column: span 5 / span 5;
-}
-
 .mini_title{
   height:70px;
-  width: 100%;
+  width: 105%;
+
   background-color:#b03330;
   margin-bottom:30px;
   border-radius:0px 35px 35px 0px;
@@ -30,8 +23,13 @@
   color:white;
 }
 
+.species_grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .grid_item{
-  width:calc(100% / 5 - 100px / 5);
+  width:calc(100% / 5 - 50px / 5);
 }
 
 .species_grid .grid_item:nth-child(5n-1),
@@ -39,13 +37,31 @@
 .species_grid .grid_item:nth-child(5n-3),
 .species_grid .grid_item:nth-child(5n-4)
 {
-  margin: 0px calc(100px / 4) 50px 0px;
+  margin: 0px calc(50px / 4) 50px 0px;
 }
 
-.species_grid{
-  display: flex;
-  flex-wrap: wrap;
+@media (max-width: 1024px) {
+
+  .mini_title{
+
+    width: 98%;
+
+  }
+
+  .species_grid{
+    padding: 0px 15px;
+  }
+
+  .grid_item{
+    /* width:calc((100% / 3 ) - 5px); */
+    width:calc((100% / 3 - 100px / 3));
+  }
+
+  .species_grid .grid_item:nth-child(3n-1),
+  .species_grid .grid_item:nth-child(3n-2)
+  {
+    background-color: #b03330;
+    margin: 0px calc(50px / 2) 50px 0px;
+    /* margin: 0px calc(50px / 2) 50px 0px; */
+  }
 }
-
-
-/* width calc(100% / 3 - 20px) */

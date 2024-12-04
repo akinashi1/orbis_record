@@ -4,14 +4,12 @@ import styles from "./Main.module.css";
 import {OrbisLogo} from "@/components/OrbisLogo";
 import {SpeciesList} from "@/feautres/top/components/species/SpeciesList"
 
-
 const BASE_PATH = nextConfig.basePath || "";
 
 export default function Home() {
   return (
   <main className={styles.main}>
     <section className={styles.contain}>
-      
       <section>
         <div className={styles.top_logo}>
           <OrbisLogo />
@@ -29,13 +27,12 @@ export default function Home() {
           世界について2<br />
           世界について3<br />
         </p>
-
       </section>
 
-      <section>
+      {/* <section>
         <h1  className={styles.world_title}>世界一覧</h1>
         <div className={styles.world_contents}>世界一覧</div>
-      </section>
+      </section> */}
 
       <SpeciesList />
     </section>
