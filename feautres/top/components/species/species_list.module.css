@@ -73,11 +73,12 @@
 
 .grid_item{
   width:calc(100% / 5 - 50px / 5);
+  text-align: center;
+
 }
 
-.grid_item{
-  text-align: center;
-}
+
+
 
 .species_grid .grid_item:nth-child(5n-1),
 .species_grid .grid_item:nth-child(5n-2),
@@ -98,6 +99,26 @@
   height: auto;
   transition: transform .1s ease; 
 }
+
+.grid_item:hover .image:nth-of-type(1){
+  display: none;
+
+}
+
+.grid_item .image:nth-of-type(2){
+  display: none;
+
+}
+
+.grid_item:hover .image:nth-of-type(2){
+  display: block;
+
+}
+
+
+
+
+
 
 @media (max-width: 1024px) {
 

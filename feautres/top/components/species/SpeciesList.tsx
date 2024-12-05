@@ -23,13 +23,125 @@ export function SpeciesList() {
 
           <div className={styles.grid_item}>
             <Image
+              className={styles.image}
+              src={`${BASE_PATH}/no_image.png`} alt="orbis_icon"
+              width={800}
+              height={600}
+              style={{ width: '100%', height: 'auto' }}
+            />
+
+            <Image
+              className={styles.image}
+              src={`${BASE_PATH}/no_image_hover.png`} alt="orbis_icon"
+              width={800}
+              height={600}
+              style={{ width: '100%', height: 'auto' }}
+            />
+
+            <h2>鬼(西洋鬼)</h2>
+            <p>Ogre</p>
+          </div>
+
+          <div className={styles.grid_item}>
+            <Image
             className={styles.image}
             src={`${BASE_PATH}/no_image.png`} alt="orbis_icon"
-            width={800}
-            height={600}
-            style={{ width: '100%', height: 'auto' }}
+            width={800} 
+            height={600} 
+            style={{ width: '100%', height: 'auto' }} 
             />
-            <h2>鬼(西洋鬼)</h2>
+            <h2>人狼</h2>
+            <p>英語名</p>
+          </div>
+
+          <div className={styles.grid_item}>
+            <Image
+            className={styles.image}
+            src={`${BASE_PATH}/no_image.png`} alt="orbis_icon"
+            width={800} 
+            height={600} 
+            style={{ width: '100%', height: 'auto' }} 
+            />
+            <h2>翼人</h2>
+            <p>英語名</p>
+          </div>
+
+          <div className={styles.grid_item}>
+            <Image
+            className={styles.image}
+            src={`${BASE_PATH}/no_image.png`} alt="orbis_icon"
+            width={800} 
+            height={600} 
+            style={{ width: '100%', height: 'auto' }} 
+            />
+            <h2>鉱人</h2>
+            <p>英語名</p>
+          </div>
+
+          <div className={styles.grid_item}>
+            <Image
+            className={styles.image}
+            src={`${BASE_PATH}/no_image.png`} alt="orbis_icon"
+            width={800} 
+            height={600} 
+            style={{ width: '100%', height: 'auto' }} 
+            />
+            <h2>喰人</h2>
+            <p>英語名</p>
+          </div>
+
+          <div className={styles.grid_item}>
+            <Image
+            className={styles.image}
+            src={`${BASE_PATH}/no_image.png`} alt="orbis_icon"
+            width={800} 
+            height={600} 
+            style={{ width: '100%', height: 'auto' }} 
+            />
+            <h2>吸血鬼</h2>
+            <p>英語名</p>
+          </div>
+
+          <div className={styles.grid_item}>
+            <Image
+            className={styles.image}
+            src={`${BASE_PATH}/no_image.png`} alt="orbis_icon"
+            width={800} 
+            height={600} 
+            style={{ width: '100%', height: 'auto' }} 
+            />
+            <h2>吸魔鬼</h2>
+            <p>英語名</p>
+          </div>
+
+        </div>
+
+        <div className={styles.mini_title}>
+          <div>
+            <h2>妖魔族<span>demonia</span></h2> 
+          </div>
+        </div>
+
+        <div className={styles.species_grid}>
+
+          <div className={styles.grid_item}>
+            <Image
+              className={styles.image}
+              src={`${BASE_PATH}/no_image.png`} alt="orbis_icon"
+              width={800}
+              height={600}
+              style={{ width: '100%', height: 'auto' }}
+            />
+
+            <Image
+              className={styles.image}
+              src={`${BASE_PATH}/no_image_hover.png`} alt="orbis_icon"
+              width={800}
+              height={600}
+              style={{ width: '100%', height: 'auto' }}
+            />
+
+            <h2>魔族</h2>
             <p>Ogre</p>
           </div>
 
