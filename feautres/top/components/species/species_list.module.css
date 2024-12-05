@@ -6,21 +6,34 @@
 .species_title{
   font-size: 40px;
   text-align: center;
+  align-items:flex-end;
+  margin-bottom: 30px;
 }
 
 .mini_title{
   height:70px;
   width: 100%;
-
   background-color:#b03330;
   margin-bottom:30px;
   border-radius:0px 35px 35px 0px;
+  display: flex;
+  justify-content: start;
+  color:white;
+
 }
 
-.mini_title_text{
+.mini_title h2{
   margin-left:10px;
-  font-size:2em; 
-  color:white;
+  font-size:3em; 
+}
+
+.mini_title p{
+  margin-left:10px;
+}
+
+
+.mini_title_text span{
+  font-size:1em; 
 }
 
 .species_grid{
@@ -44,6 +57,10 @@
   margin: 0px calc(50px / 4) 50px 0px;
 }
 
+.image{
+  border-radius: 10px;
+
+}
 @media (max-width: 1024px) {
 
   .mini_title{
@@ -72,7 +89,6 @@
   .species_grid .grid_item:nth-child(3n-1),
   .species_grid .grid_item:nth-child(3n-2)
   {
-    background-color: #b03330;
     margin: 0px calc(1.5em / 2) 50px 0px;
   }
 }
