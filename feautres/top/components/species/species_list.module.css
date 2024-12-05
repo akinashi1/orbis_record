@@ -10,8 +10,27 @@
   margin-bottom: 30px;
 }
 
+
+
+/* メインタイトル */
+.heading05 {
+	position: relative;
+	padding-bottom: 50px;
+	font-size: 50px;
+	text-align: center;
+}
+
+.heading05::before {
+	content: attr(data-en);
+	display: block;
+	color: #679fff;
+	font-size: 30px;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
 .mini_title{
-  height:70px;
+  height:80px;
   width: 100%;
   background-color:#b03330;
   margin-bottom:30px;
@@ -19,21 +38,32 @@
   display: flex;
   justify-content: start;
   color:white;
+  padding: auto;
+
+
+  vertical-align: bottom;
+}
+
+.mini_title div{
+  margin: auto 0px;
 
 }
+
 
 .mini_title h2{
   margin-left:10px;
   font-size:3em; 
+  text-align: bottom;
 }
 
-.mini_title p{
+.mini_title h2 span {
   margin-left:10px;
+  text-align: bottom;
+  font-size:0.5em;
 }
-
 
 .mini_title_text span{
-  font-size:1em; 
+  font-size:1px; 
 }
 
 .species_grid{
@@ -59,14 +89,20 @@
 
 .image{
   border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(38, 34, 34, 0.33);
 
 }
+
+.grid_item:hover{
+  transform: scale(1.2); 
+  height: auto;
+  transition: transform .1s ease; 
+}
+
 @media (max-width: 1024px) {
 
   .mini_title{
-
     width: 100%;
-
   }
 
   .species_grid{
@@ -74,6 +110,7 @@
   }
 
   .grid_item{
+
 
     width:calc((100% / 3) - (1.5em / 3));
   }

@@ -9,21 +9,25 @@ export function SpeciesList() {
   return (
     <main  className={styles.main}>
       <section  className={styles.species_main}>
-        <h1 className={styles.species_title}>種族一覧</h1>
-        
+        {/* <h1 className={styles.species_title}>種族一覧</h1> */}
+
+        <h2 className={styles.heading05} data-en="Species">種族</h2>
+
         <div className={styles.mini_title}>
-          <h2>亜人</h2> 
-          <p>ここに</p>
+          <div>
+            <h2>亜人<span>demi</span></h2> 
+          </div>
         </div>
 
         <div className={styles.species_grid}>
+
           <div className={styles.grid_item}>
             <Image
             className={styles.image}
             src={`${BASE_PATH}/no_image.png`} alt="orbis_icon"
-            width={800} 
-            height={600} 
-            style={{ width: '100%', height: 'auto' }} 
+            width={800}
+            height={600}
+            style={{ width: '100%', height: 'auto' }}
             />
             <h2>鬼(西洋鬼)</h2>
             <p>Ogre</p>
@@ -52,6 +56,7 @@ export function SpeciesList() {
             <h2>翼人</h2>
             <p>英語名</p>
           </div>
+
           <div className={styles.grid_item}>
             <Image
             className={styles.image}
@@ -63,6 +68,7 @@ export function SpeciesList() {
             <h2>鉱人</h2>
             <p>英語名</p>
           </div>
+
           <div className={styles.grid_item}>
             <Image
             className={styles.image}
@@ -75,7 +81,6 @@ export function SpeciesList() {
             <p>英語名</p>
           </div>
 
-          
           <div className={styles.grid_item}>
             <Image
             className={styles.image}
@@ -87,6 +92,7 @@ export function SpeciesList() {
             <h2>吸血鬼</h2>
             <p>英語名</p>
           </div>
+
           <div className={styles.grid_item}>
             <Image
             className={styles.image}
@@ -98,39 +104,7 @@ export function SpeciesList() {
             <h2>吸魔鬼</h2>
             <p>英語名</p>
           </div>
-          <div className={styles.grid_item}>
-            <Image
-            className={styles.image}
-            src={`${BASE_PATH}/no_image.png`} alt="orbis_icon"
-            width={800} 
-            height={600} 
-            style={{ width: '100%', height: 'auto' }} 
-            />
-            <h2>種族名</h2>
-            <p>英語名</p>
-          </div>
-          <div className={styles.grid_item}>
-            <Image
-            className={styles.image}
-            src={`${BASE_PATH}/no_image.png`} alt="orbis_icon"
-            width={800} 
-            height={600} 
-            style={{ width: '100%', height: 'auto' }} 
-            />
-            <h2>種族名</h2>
-            <p>英語名</p>
-          </div>
-          <div className={styles.grid_item}>
-            <Image
-            className={styles.image}
-            src={`${BASE_PATH}/no_image.png`} alt="orbis_icon"
-            width={800} 
-            height={600} 
-            style={{ width: '100%', height: 'auto' }} 
-            />
-            <h2>種族名</h2>
-            <p>英語名</p>
-          </div>  
+
         </div>
       </section>
     </main>

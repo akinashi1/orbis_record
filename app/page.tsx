@@ -17,7 +17,7 @@ export default function Home() {
         <strong className={styles.top_title}>ORBIS RECORD</strong>
       </section>
 
-      <section className={styles.world_info}>
+      {/* <section className={styles.world_info}>
         <h1 className={styles.info_title}>
           <span>概要</span>
         </h1>
@@ -27,7 +27,7 @@ export default function Home() {
           世界について2<br />
           世界について3<br />
         </p>
-      </section>
+      </section> */}
 
       {/* <section>
         <h1  className={styles.world_title}>世界一覧</h1>
