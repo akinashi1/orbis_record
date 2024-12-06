@@ -10,8 +10,6 @@
   margin-bottom: 30px;
 }
 
-
-
 /* メインタイトル */
 .heading05 {
 	position: relative;
@@ -72,19 +70,9 @@
 }
 
 .grid_item{
-  width:calc(100% / 5 - 50px / 5);
-  text-align: center;
-
+width: 100%;
 }
 
-.species_grid .grid_item:nth-child(5n-1),
-.species_grid .grid_item:nth-child(5n-2),
-.species_grid .grid_item:nth-child(5n-3),
-.species_grid .grid_item:nth-child(5n-4)
-{
-
-  margin: 0px calc(50px / 4) 50px 0px;
-}
 
 .image{
   border-radius: 10px;
