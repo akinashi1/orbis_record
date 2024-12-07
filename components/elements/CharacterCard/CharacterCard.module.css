@@ -81,7 +81,7 @@ width: 100%;
 }
 
 .grid_item:hover{
-  transform: scale(1.2); 
+  transform: scale(1.05); 
   height: auto;
   transition: transform .1s ease; 
 }
@@ -108,9 +108,9 @@ width: 100%;
     width: 100%;
   }
 
-  .species_grid{
+  /* .species_grid{
     padding: 0px 10px;
-  }
+  } */
 
   /* .grid_item{
 

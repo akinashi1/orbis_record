@@ -93,7 +93,7 @@
 }
 
 .grid_item:hover{
-  transform: scale(1.2); 
+  /* transform: scale(1);  */
   height: auto;
   transition: transform .1s ease; 
 }
@@ -133,12 +133,12 @@
   }
 
   .grid_item{
-    width:calc((100% / 3) - (1.5em / 3));
+    width:calc((100% / 3) - (2em / 3));
   }
 
   .species_grid .grid_item:nth-child(3n-1),
   .species_grid .grid_item:nth-child(3n-2)
   {
-    margin: 0px calc(1.5em / 2) 50px 0px;
+    margin: 0px calc(2em / 2) 50px 0px;
   }
 }
