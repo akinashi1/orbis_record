@@ -12,14 +12,14 @@ import {SubTitle} from "@/components/elements/SubTitle/SubTitle";
 
 
 export function SpeciesList() {
+
+
   return (
     <main  className={styles.main}>
       <section  className={styles.species_main}>
 
         <MainTitle 
-        
           title = "亜人"
-          
         />
 
         <SubTitle />

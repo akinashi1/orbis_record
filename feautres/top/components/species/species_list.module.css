@@ -114,10 +114,6 @@
 }
 
 
-
-
-
-
 @media (max-width: 1024px) {
 
   .mini_title{
@@ -128,18 +124,16 @@
     padding: 0px 10px;
   }
 
-  .grid_item{
-
-
-    width:calc((100% / 3) - (1.5em / 3));
-  }
-
   .species_grid .grid_item:nth-child(5n-1),
   .species_grid .grid_item:nth-child(5n-2),
   .species_grid .grid_item:nth-child(5n-3),
   .species_grid .grid_item:nth-child(5n-4)
   {
     margin: 0px 0px 50px 0px;
+  }
+
+  .grid_item{
+    width:calc((100% / 3) - (1.5em / 3));
   }
 
   .species_grid .grid_item:nth-child(3n-1),
