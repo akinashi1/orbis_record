@@ -49,7 +49,6 @@
 
 }
 
-
 .mini_title h2{
   margin-left:10px;
   font-size:3em; 
@@ -67,6 +66,7 @@
 }
 
 .species_grid{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }

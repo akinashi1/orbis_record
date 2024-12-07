@@ -9,7 +9,8 @@ import nextConfig from "@/next.config.mjs";
 
 const BASE_PATH = nextConfig.basePath || "";
 
-export function CharacterCard() {
+export function CharacterCard(props) {
+  
   return (
     <main className={styles.grid_item}>
 
