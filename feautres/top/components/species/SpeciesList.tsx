@@ -13,6 +13,7 @@ import  species  from "@/public/JSON/species.json";
 import  categories  from "@/public/JSON/category.json";
 
 import { ReactElement } from "react";
+import { section } from "framer-motion/client";
 
 export function SpeciesList() {
 
@@ -24,7 +25,7 @@ export function SpeciesList() {
   let main_title ="";
   let main_en_title ="";
   let sub_title = "";
-  let species_id_list =[];
+  let species_id = "";
   let spesies_data : ReactElement[] = [];
 
   for (let i in categories_list){
@@ -42,24 +43,29 @@ export function SpeciesList() {
     for (let j in categories_list[i]["sub_category"]){
       //サブカテゴリー
       sub_title = categories_list[i]["sub_category"][j]["name"]
-      species_id_list = categories_list[i]["sub_category"][j]["species"]
 
+      
+      spesies_data =[];
       list.push(
-        <h2>{sub_title}</h2>
-      );
+        <section>
+          <h2>{sub_title}</h2>
 
-      list.push(   
           <div className={styles.species_grid}>
           <>{spesies_data}</>
           </div>
+        </section>
       )
 
-      for (let k in species_id_list){
-        console.log(species_list[species_id_list[k]]["name"])
+      console.log(categories_list[i]["sub_category"][j]["species"])
+      for (let k in categories_list[i]["sub_category"][j]["species"]){
+        
+        species_id = categories_list[i]["sub_category"][j]["species"][k]
+        console.log("test")
+
 
         const baseProps = {
-          name : species_list[species_id_list[k]]["name"],
-          en_name : species_list[species_id_list[k]]["en_name"]
+          name : species_list[species_id]["name"],
+          en_name : species_list[species_id]["en_name"]
         }
 
         spesies_data.push( 
@@ -69,10 +75,6 @@ export function SpeciesList() {
             /> 
           </div>
         )
-
-
-        
-
       }
     }
   }
