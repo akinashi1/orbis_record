@@ -1,0 +1,36 @@
+{
+  "亜人族":{
+    "name": "亜人族", 
+    "en_name": "DEMI",
+    "sub_category" : [
+      { 
+        "name": "亜人１", 
+        "en_name": "亜人１",
+        "species" : [ "001", "002"]
+      },
+      { 
+        "name": "亜人２", 
+        "en_name": "Paul",
+        "species" : [ "003", "004"]
+      }
+    ]
+  },
+
+  "妖魔族":{
+    "name": "妖魔族", 
+    "en_name": "DEMONIA",
+    "sub_category" : [
+      { 
+        "name": "妖魔族１", 
+        "en_name": "Paul",
+        "species" : [ "005", "006"]
+      },
+      { 
+        "name": "妖魔族２", 
+        "en_name": "Paul",
+        "species" : [ "007", "008"]
+      }
+    ]
+  }
+}
+

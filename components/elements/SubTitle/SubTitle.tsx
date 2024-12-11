@@ -7,11 +7,11 @@ import nextConfig from "@/next.config.mjs";
 
 const BASE_PATH = nextConfig.basePath || "";
 
-export function SubTitle() {
+export function SubTitle(props) {
   return (
     <div className={styles.mini_title}>
     <div>
-      <h2>亜人<span>demi</span></h2> 
+      <h2>{props.title}<span>{props.en_title}</span></h2> 
     </div>
   </div>
   )

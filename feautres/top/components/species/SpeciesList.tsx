@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import nextConfig from "@/next.config.mjs";
 const BASE_PATH = nextConfig.basePath || "";
@@ -8,35 +10,109 @@ import {CharacterCard} from "@/components/elements/CharacterCard/CharacterCard";
 import {MainTitle} from "@/components/elements/MainTitle/MainTitle";
 import {SubTitle} from "@/components/elements/SubTitle/SubTitle";
 import  species  from "@/public/JSON/species.json";
+import  categories  from "@/public/JSON/category.json";
+
 import { ReactElement } from "react";
 
 export function SpeciesList() {
 
-      // /** jsonデータ編集 */
-      // const cdList = [];
-      // for (var cdNo in Code) {
-      //     for (var cd in Code[cdNo]) {
-      //         const cdStr = <div>
-      //                            {cdNo + '-' + cd + '-' + Code[cdNo][cd]}
-      //                       </div>;
-      //         cdList.push(cdStr);
-      //     }
-      // }
+  const species_list = JSON.parse(JSON.stringify(species));
+  const categories_list = JSON.parse(JSON.stringify(categories));
 
-      let name = ['aaa','bbb','ccc'];
-      let list : ReactElement[] = [];
-      // let data : ReactElement;
-      for(let i in name){
-        let data = 
+  let list : ReactElement[] = []; 
+
+  let main_title ="";
+  let main_en_title ="";
+  let sub_title = "";
+  let species_id_list =[];
+  let spesies_data : ReactElement[] = [];
+
+  for (let i in categories_list){
+    //カテゴリー
+    main_title = categories_list[i]["name"];
+    main_en_title = categories_list[i]["en_name"];
+    
+    list.push(
+      <SubTitle 
+        title = {main_title}
+        en_title = {main_en_title}
+      />
+    );
+
+    for (let j in categories_list[i]["sub_category"]){
+      //サブカテゴリー
+      sub_title = categories_list[i]["sub_category"][j]["name"]
+      species_id_list = categories_list[i]["sub_category"][j]["species"]
+
+      list.push(
+        <h2>{sub_title}</h2>
+      );
+
+      list.push(   
+          <div className={styles.species_grid}>
+          <>{spesies_data}</>
+          </div>
+      )
+
+      for (let k in species_id_list){
+        console.log(species_list[species_id_list[k]]["name"])
+
+        const baseProps = {
+          name : species_list[species_id_list[k]]["name"],
+          en_name : species_list[species_id_list[k]]["en_name"]
+        }
+
+        spesies_data.push( 
           <div className={styles.grid_item}>
             <CharacterCard
-            title = {i}
+              { ...baseProps}
             /> 
           </div>
-        ;
+        )
 
-        list.push(data);
+
+        
+
       }
+    }
+  }
+
+  // for (let i in species_list){
+  //   console.log(i)
+  //   list.push(
+  //     <SubTitle 
+  //       title = {i}
+  //     />
+  //   );
+  //   for (let j in species_list[i]){
+  //     list.push(
+  //       <h2>{j}</h2>
+  //     );
+
+  //     list.push(   
+  //         <div className={styles.species_grid}>
+  //         <>{spesies_list}</>
+  //         </div>
+  //     )
+
+  //     for (let k in species_list[i][j]){
+  //       const baseProps = {
+  //         name : species_list[i][j][k]["name"],
+  //         en_name : species_list[i][j][k]["en_name"]
+  //       }
+
+  //       spesies_list.push( 
+  //         <div className={styles.grid_item}>
+  //           <CharacterCard
+  //             { ...baseProps}
+  //           /> 
+  //         </div>
+  //       )
+  //     }
+  //     spesies_list = [];
+  //   }
+  // }
+
 
   return (
     <main  className={styles.main}>
@@ -46,18 +122,9 @@ export function SpeciesList() {
           title = "種族一覧"
         />
 
-        <SubTitle />
-
-        <div className={styles.species_grid}>
-
-        <>{name}</>
-
-        </div>
+        <>{list}</>
 
       </section>
     </main>
   );
 }
-
-
-

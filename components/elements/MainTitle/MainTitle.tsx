@@ -10,8 +10,8 @@ const BASE_PATH = nextConfig.basePath || "";
 
 export function MainTitle(props: any) {
 
-    console.log("テスト");
-    console.log(props.title);
+    // console.log("テスト");
+    // console.log(props.title);
 
   return (
     <h2 className={styles.heading05} data-en="Species">{props.title}</h2>

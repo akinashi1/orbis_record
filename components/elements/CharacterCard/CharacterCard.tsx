@@ -10,7 +10,7 @@ import nextConfig from "@/next.config.mjs";
 const BASE_PATH = nextConfig.basePath || "";
 
 export function CharacterCard(props) {
-  
+  console.log(props)
   return (
     <main className={styles.grid_item}>
 
@@ -30,8 +30,8 @@ export function CharacterCard(props) {
         style={{ width: '100%', height: 'auto' }}
       />
 
-      <h2>鬼(西洋鬼)</h2>
-      <p>Ogre</p>
+      <h2>{props.name}</h2>
+      <p>{props.en_name}</p>
 
     </main>
   )

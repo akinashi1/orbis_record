@@ -1,32 +1,5 @@
-/* 種族一覧 */
-.species_main{
+.main{
   width: 100%;
-}
-
-.species_title{
-  font-size: 40px;
-  text-align: center;
-  align-items:flex-end;
-  margin-bottom: 30px;
-}
-
-
-
-/* メインタイトル */
-.heading05 {
-	position: relative;
-	padding-bottom: 50px;
-	font-size: 50px;
-	text-align: center;
-}
-
-.heading05::before {
-	content: attr(data-en);
-	display: block;
-	color: #679fff;
-	font-size: 30px;
-	font-style: italic;
-	text-transform: uppercase;
 }
 
 .mini_title{
