@@ -1,0 +1,20 @@
+.image{
+    width: 200%;
+    margin-top: 30px;
+    background-color: rgb(161, 211, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100px 0px 100px 0px  ;
+}
+
+.top_logo {
+  display: flex;
+  justify-content: center;
+
+}
+
+.top_title {
+	font-size: 60px;
+  white-space: nowrap;
+}
