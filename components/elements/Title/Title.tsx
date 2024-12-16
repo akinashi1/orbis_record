@@ -8,7 +8,7 @@ const BASE_PATH = nextConfig.basePath || "";
 
 export function PrimaryTitle(props: any) {
   return (
-    <h2 className={styles.heading05} data-en="Species">
+    <h2 className={styles.PrimaryTitle} data-en="Species">
       {props.title}
     </h2>
   )
@@ -16,7 +16,7 @@ export function PrimaryTitle(props: any) {
 
 export function SecondaryTitle(props) {
   return (
-    <div className={styles.mini_title}>
+    <div className={styles.SecondaryTitle}>
     <div>
       <h2>{props.title}<span>{props.en_title}</span></h2> 
     </div>
@@ -26,6 +26,8 @@ export function SecondaryTitle(props) {
 
 export function TertiaryTitle(props) {
   return (
-    <h2>{props.title}</h2>
+    <div className={styles.TertiaryTitle}>
+      <h2>{props.title}</h2>
+    </div>
   )
 }

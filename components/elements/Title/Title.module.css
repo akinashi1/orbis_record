@@ -1,12 +1,12 @@
 /* PrimaryTitle */
-.heading05 {
+.PrimaryTitle {
 	position: relative;
 	padding-bottom: 50px;
 	font-size: 50px;
 	text-align: center;
 }
 
-.heading05::before {
+.PrimaryTitle::before {
 	content: attr(data-en);
 	display: block;
 	color: #679fff;
@@ -16,39 +16,36 @@
 }
 
 /* SecondaryTitle */
-.mini_title{
+.SecondaryTitle{
   height:80px;
   width: 100%;
   background-color:#b03330;
-  margin-bottom:30px;
+  margin-bottom:20px;
   border-radius:0px 35px 35px 0px;
   display: flex;
   justify-content: start;
   color:white;
   padding: auto;
-
-
   vertical-align: bottom;
 }
 
-.mini_title div{
+.SecondaryTitle div{
   margin: auto 0px;
 }
 
-.mini_title h2{
+.SecondaryTitle h2{
   margin-left:10px;
   font-size:3em; 
   text-align: bottom;
 }
 
-.mini_title h2 span {
+.SecondaryTitle h2 span {
   margin-left:10px;
   text-align: bottom;
   font-size:0.5em;
 }
 
-.mini_title_text span{
-  font-size:1px; 
-}
-
 /* TertiaryTitle */
+.TertiaryTitle h2{
+  margin-bottom: 20px;
+}
