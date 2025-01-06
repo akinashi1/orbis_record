@@ -1,0 +1,21 @@
+.image{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px 0px 100px 0px  ;
+}
+
+.top_logo {
+display: flex;
+justify-content: center;
+
+}
+
+.top_title {
+font-size: 60px;
+white-space: nowrap;
+}

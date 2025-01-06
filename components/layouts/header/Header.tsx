@@ -8,6 +8,8 @@ import React, { useState } from "react";
 
 const BASE_PATH = nextConfig.basePath || "";
 
+import { createContext, useContext, useEffect,Suspense  } from "react";
+
 export function Header() {
 
   const [isActive, setIsActive] = useState(false);

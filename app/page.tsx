@@ -6,7 +6,6 @@ import {TopImage} from "@/feautres/top/components/TopImage/TopImage"
 
 import {SpeciesList} from "@/feautres/top/components/species/SpeciesList"
 
-
 const BASE_PATH = nextConfig.basePath || "";
 
 export default function Home() {

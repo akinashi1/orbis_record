@@ -6,6 +6,10 @@ import {Header} from "@/components/layouts/header/Header";
 import {Footer} from "@/components/layouts/footer/Footer";
 
 
+import { DataProvider } from "./context/DataContext";
+
+
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -26,13 +30,17 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>)
+ {
+
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Header />
-        {children}
-        <Footer />
+        <DataProvider>
+          <Header />
+            {children}
+          <Footer /> 
+        </DataProvider>
       </body>
     </html>
   );
