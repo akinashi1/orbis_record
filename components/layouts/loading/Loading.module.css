@@ -1,21 +1,58 @@
 .image{
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
+  pointer-events: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
 
+  background-color: rgba(255, 255, 255, 1); /* 白背景を半透明に */
+  /* opacity: 1; */
+  transition: opacity 0.5s ease; /* フェードアウト時のトランジション */
+  z-index: 1000; /* 最前面に表示 */
+}
+
+.continer{
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  border-radius: 100px 0px 100px 0px  ;
-}
-
-.top_logo {
-display: flex;
-justify-content: center;
+  align-items: center;
+  top: 50%;
+  
 
 }
 
-.top_title {
-font-size: 60px;
-white-space: nowrap;
+.logo{
+  position: absolute;
+}
+
+/* フェードアウトアニメーション */
+.active {
+  opacity: 0;
+  pointer-events: none; /* クリックを無効化 */
+}
+
+.circle {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+  font-size: 10px;
+  font-weight: 900;
+  color: red;
+  animation: donut-spin 10s linear infinite;
+}
+.circle svg {
+  overflow: visible;
+}
+.circle path {
+  fill: none;
+}
+.circle text {
+  fill: black;
+}
+@keyframes donut-spin {
+  to {
+    transform: rotate(1turn);
+  }
 }

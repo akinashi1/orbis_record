@@ -10,6 +10,8 @@ const DataContext =  createContext();
 export const DataProvider = ({ children }) => {
   const [sharedData, setSharedData] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // ローディング状態
+  const [fadeOut, setFadeOut] = useState(false); // ローディング状態
+
   //初回起動
   useEffect(() => {
     fetch('https://script.google.com/macros/s/AKfycby_SJEgaRyWa0U1cnYOY0h-w5KRg-DI3IAaDusWQqfYamSwT9ZvsWcOqDreDxuouN0v/exec?sheetName=species')
@@ -22,19 +24,20 @@ export const DataProvider = ({ children }) => {
     })
     .finally(() => {
       console.log("データの読み込みが完了しました");
-      setIsLoading(false);
+
+      setTimeout(() => setFadeOut(true), 1000); // 1秒間ローディング表示後にフェードアウト
     })
   }, []);
 
-  if (isLoading) {
-    // ローディング画面を表示
-    return <Loading />;
-  }
-
   return (
-    <DataContext.Provider value={{ sharedData, setSharedData }}>
-      {children}
-    </DataContext.Provider> 
+    <>
+      <Loading fadeOut = {fadeOut} />;
+
+
+      <DataContext.Provider value={{ sharedData, setSharedData }}>
+        {children}
+      </DataContext.Provider> 
+    </>
   );
 };
 

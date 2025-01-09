@@ -14,7 +14,6 @@ import { section } from "framer-motion/client";
 import React, { useState, useEffect } from 'react';
 
 
-
 //コンテキスト
 import { useDataContext } from "@/app/context/DataContext";
 
