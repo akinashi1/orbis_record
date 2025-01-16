@@ -23,7 +23,12 @@ export function SpeciesList() {
   const [list, setList] = useState<ReactElement[]>([]);
 
   useEffect(() => {
-    const newList = sharedData.map((item, index) => (
+    console.log("動作チェック")
+    if(!sharedData){
+      return
+    }
+
+    const newList = sharedData.species.map((item, index) => (
       <SecondaryTitle
         key={index}
         title={item["name"]}
