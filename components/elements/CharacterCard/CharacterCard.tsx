@@ -15,7 +15,7 @@ export function CharacterCard(props) {
   }
   
   return (
-    <main>
+    <main className={styles.grid_item_main}>
       <section onClick={ () => popup_modal() } className={styles.grid_item}> 
         <Image
       
