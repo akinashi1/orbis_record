@@ -2,14 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./CharacterCard.module.css";
+import styles from "./Card.module.css";
 import nextConfig from "@/next.config.mjs";
 // import React, { useState } from "react";
 // import { main } from "framer-motion/client";
 
+import { Card } from "@/components/elements/Card/Card";
+
+
+
 const BASE_PATH = nextConfig.basePath || "";
 
-export function CharacterCard(props) {
+export function CardList(props) {
   function popup_modal(){
     console.log("hey")
   }

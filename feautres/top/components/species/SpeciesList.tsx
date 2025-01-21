@@ -4,7 +4,8 @@
 import styles from "./species_list.module.css";
 // コンポーネント
 import {OrbisLogo} from "@/components/OrbisLogo";
-import {CharacterCard} from "@/components/elements/CharacterCard/CharacterCard";
+import {CardList} from "@/components/elements/CardList/CardList";
+import {Card} from "@/components/elements/Card/Card";
 import {PrimaryTitle,SecondaryTitle,TertiaryTitle} from "@/components/elements/Title/Title";
 // JSON
 import  species  from "@/public/JSON/species.json";
@@ -51,7 +52,7 @@ export function SpeciesList() {
       //表示用フレーム
       newList.push(
         <div className={styles.species_grid}>
-        <>{spesies_data}</>
+        {spesies_data}
         </div>
       )
 
@@ -65,7 +66,7 @@ export function SpeciesList() {
 
           spesies_data.push( 
             <div key={species_id} className={styles.grid_item}>
-              <CharacterCard
+              <Card
                 {...baseProps}
               />
             </div>

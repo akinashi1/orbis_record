@@ -1,0 +1,19 @@
+.image{
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(38, 34, 34, 0.33);
+}
+
+.grid_item_main{
+  transition: .5s;
+  transform-origin: left;
+
+}
+
+.grid_item_main:hover{
+  /* transform: translate(50vw, 50vh); */
+  transform: scale(3); 
+
+  /* transform:translateX(50vw); */
+
+
+}

@@ -31,7 +31,7 @@ export const DataProvider = ({ children }) => {
 
   return (
     <>
-      <Loading fadeOut = {fadeOut} />;
+      <Loading fadeOut = {fadeOut} />
 
 
       <DataContext.Provider value={{ sharedData, setSharedData }}>
