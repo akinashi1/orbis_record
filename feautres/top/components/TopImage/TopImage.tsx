@@ -12,7 +12,7 @@ export function TopImage() {
         <div className={styles.top_logo}>
           <OrbisLogo />
         </div>
-        <strong className={styles.top_title}>ORBIS RECORD</strong>
+        <strong className={styles.top_title}>TEST TEST</strong>
       </section>
   )
 }

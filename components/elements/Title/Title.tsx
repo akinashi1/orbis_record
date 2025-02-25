@@ -8,7 +8,7 @@ const BASE_PATH = nextConfig.basePath || "";
 
 export function PrimaryTitle(props: any) {
   return (
-    <h2 className={styles.PrimaryTitle} data-en="Species">
+    <h2 className={styles.PrimaryTitle} data-en="subtitle">
       {props.title}
     </h2>
   )

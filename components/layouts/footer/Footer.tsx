@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className={classes.footer}>
       <div className={classes.contents}>
-        <p>Copyright © 2024 Akinashi-Kou All Rights Reserved.</p>
+        <p>Copyright © 2024 **** All Rights Reserved.</p>
       </div>
     </footer>
   );

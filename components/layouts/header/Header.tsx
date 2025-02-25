@@ -28,16 +28,16 @@ export function Header() {
               width={90}
               height={90}
             />
-            <strong>ORBIS <br/>RECORD</strong>
+            <strong>TEST <br/>TEXT</strong>
           </Link>
 
           <section>
             <nav className={`${classes.right_nav} ${isActive ? classes.active : ""}`}>
-              <p className={classes.menu}><Link href={"/character"}>Character</Link></p>
-              <p className={classes.menu}><Link href={"/species"}>Species</Link></p>
-              <p className={classes.menu}><Link href={"/world"}>World</Link></p>
-              <p className={classes.menu}><Link href={"/items"}>Items</Link></p>
-              <p className={classes.menu}><Link href={"/term"}>Term</Link></p>
+              <p className={classes.menu}><Link href={"/character"}>page1</Link></p>
+              <p className={classes.menu}><Link href={"/species"}>page1</Link></p>
+              <p className={classes.menu}><Link href={"/world"}>page1</Link></p>
+              <p className={classes.menu}><Link href={"/items"}>page1</Link></p>
+              <p className={classes.menu}><Link href={"/term"}>page1</Link></p>
             </nav>
 
             <section onClick={ () => click_burger() }>

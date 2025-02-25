@@ -8,7 +8,7 @@
 
   background-color: rgba(255, 255, 255, 1); /* 白背景を半透明に */
   /* opacity: 1; */
-  transition: top 0.2s ease; /* フェードアウト時のトランジション */
+  transition: top 0.3s ease; /* フェードアウト時のトランジション */
   z-index: 1000; /* 最前面に表示 */
 }
 
@@ -27,9 +27,6 @@
 /* フェードアウトアニメーション */
 .active {
   top: -100vh;
-
-
-
   pointer-events: none; /* クリックを無効化 */
 }
 

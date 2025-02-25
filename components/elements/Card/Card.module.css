@@ -3,17 +3,41 @@
   box-shadow: 0px 0px 10px rgba(38, 34, 34, 0.33);
 }
 
-.grid_item_main{
+/* .grid_item_main{
   transition: .5s;
   transform-origin: left;
 
 }
 
 .grid_item_main:hover{
-  /* transform: translate(50vw, 50vh); */
   transform: scale(3); 
+} */
 
-  /* transform:translateX(50vw); */
+.popup_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.popup_overlay.active {
+  display: flex;
+  z-index: 100;
+
+}
+
+.grid_item{
+  position: relative;
+}
 
 
+.grid_item.is_popup {
+  z-index: 200;
+  background-color: white;
 }
